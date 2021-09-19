@@ -1,0 +1,35 @@
+{
+    "data": {
+        "type": "user_profile",
+        "id": "3",
+        "attributes": {
+            "id": 3,
+            "user_id": 2,
+            "first_name": "John",
+            "last_name": "Doe",
+            "phone_number": "2242690545",
+            "latitude": "40.71277530",
+            "longitude": "-74.00597280",
+            "address": "New York City, NY",
+            "bio": "biography example",
+            "created_at": "2021-09-08T14:33:13.000000Z",
+            "created_by": 2,
+            "updated_at": "2021-09-08T14:33:13.000000Z",
+            "updated_by": 2,
+            "deleted_at": null,
+            "deleted_by": null
+        },
+        "relationships": {
+            "avatars": {
+                "data": []
+            },
+            "banners": {
+                "data": []
+            }
+        },
+        "includes": [],
+        "links": {
+            "self": "http://localhost:8000/v1/users/2/profiles"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use {{ namespacedParentModel }};
+
+/**
+ * @group {{ model }} Management
+ * 
+ * APIs for managing {{ modelVariable }}s
+ */
+class {{ class }} extends Controller
+{
+    /**
+     * Get {{ model }}s
+     * 
+     * Get a listing of the {{ modelVariable }}s.
+     * 
+     * @urlParam {{ parentModelVariable }}_id int required The ID of the {{ parentModelVariable }}. Example: 1
+     * @responseFile responses/{{ model }}/{{ modelVariable }}s.json
+     */
+    public function index({{ parentModel }} ${{ parentModelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Create {{ model }}
+     * 
+     * Create a {{ modelVariable }}.
+     *
+     * @urlParam {{ parentModelVariable }} int required The ID of the {{ parentModelVariable }}. Example: 1
+     * @responseFile responses/{{ model }}/{{ modelVariable }}.json
+     */
+    public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Get {{ model }}
+     * 
+     * Get a {{ modelVariable }} with the specified id.
+     *
+     * @urlParam {{ parentModelVariable }}_id int required The ID of the {{ parentModelVariable }}. Example: 1
+     * @urlParam id int required The ID of the {{ modelVariable }}. Example: 1
+     * @responseFile responses/{{ model }}/{{ modelVariable }}.json
+     */
+    public function show({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Update {{ model }}
+     * 
+     * Update the specified {{ modelVariable }} in storage.
+     *
+     * @urlParam {{ parentModelVariable }}_id int required The ID of the {{ parentModelVariable }}. Example: 1
+     * @urlParam id int required The ID of the {{ modelVariable }}. Example: 1
+     * @responseFile responses/{{ model }}/{{ modelVariable }}.json
+     */
+    public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Delete {{ model }}
+     * 
+     * Delete the specified {{ modelVariable }} from storage (mark as deleted).
+     *
+     * @urlParam {{ parentModelVariable }}_id int required The ID of the {{ parentModelVariable }}. Example: 1
+     * @urlParam id int required The ID of the {{ modelVariable }}. Example: 1
+     * @response 204
+     */
+    public function destroy({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+}

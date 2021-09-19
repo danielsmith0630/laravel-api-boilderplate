@@ -1,0 +1,77 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+/**
+ * @group Resource Management
+ * 
+ * APIs for managing resources
+ */
+class {{ class }} extends Controller
+{
+    /**
+     * Get Resources
+     *
+     * Get a listing of the resource.
+     *
+     * @responseFile responses/Resource/resources.json
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Create Resource
+     * 
+     * Create a resource.
+     *
+     * @responseFile responses/Resource/resource.json
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Get Resource
+     * 
+     * Get a resource with the specified id.
+     * 
+     * @urlParam id int required The ID of the resource. Example: 1
+     * @responseFile responses/Resource/resource.json
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Update Resource
+     * 
+     * Update the specified resource in storage.
+     *
+     * @urlParam id int required The ID of the resource. Example: 1
+     * @responseFile responses/Resource/resource.json
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Delete Resource
+     * 
+     * Delete the specified resource (mark as deleted).
+     *
+     * @urlParam id int required The ID of the resource. Example: 1
+     * @response 204
+     */
+    public function destroy($id)
+    {
+        //
+    }
+}

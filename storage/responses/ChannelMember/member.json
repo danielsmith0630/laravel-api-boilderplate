@@ -1,0 +1,169 @@
+{
+    "data": {
+        "type": "channel_member",
+        "id": "3",
+        "attributes": {
+            "id": 3,
+            "channel_id": 1,
+            "user_id": 1,
+            "role": "admin",
+            "created_at": "2021-09-08T16:48:05.000000Z",
+            "created_by": 2,
+            "updated_at": "2021-09-08T16:48:05.000000Z",
+            "updated_by": 2,
+            "deleted_at": null,
+            "deleted_by": null
+        },
+        "relationships": {
+            "user": {
+                "data": {
+                    "type": "user",
+                    "id": 1
+                }
+            }
+        },
+        "includes": [
+            {
+                "type": "user",
+                "id": "1",
+                "attributes": {
+                    "id": 1,
+                    "email": "user@larabel-boilderplate.com"
+                },
+                "relationships": {
+                    "profile": {
+                        "data": {
+                            "type": "user_profile",
+                            "id": 1
+                        }
+                    }
+                },
+                "includes": [
+                    {
+                        "type": "user_profile",
+                        "id": "1",
+                        "attributes": {
+                            "id": 1,
+                            "user_id": 1,
+                            "first_name": "John",
+                            "last_name": "Doe"
+                        },
+                        "relationships": {
+                            "avatars": {
+                                "data": [
+                                    {
+                                        "type": "avatar",
+                                        "id": 2
+                                    }
+                                ]
+                            },
+                            "banners": {
+                                "data": [
+                                    {
+                                        "type": "banner",
+                                        "id": 2
+                                    }
+                                ]
+                            }
+                        },
+                        "includes": [
+                            {
+                                "type": "avatar",
+                                "id": "2",
+                                "attributes": {
+                                    "id": 2,
+                                    "display_state": "normal",
+                                    "avatar_type": "user_profile",
+                                    "avatar_type_id": 1
+                                },
+                                "relationships": {
+                                    "file": {
+                                        "data": {
+                                            "type": "file",
+                                            "id": 3
+                                        }
+                                    }
+                                },
+                                "includes": [
+                                    {
+                                        "type": "file",
+                                        "id": "3",
+                                        "attributes": {
+                                            "id": 3,
+                                            "user_id": 1,
+                                            "space_id": null,
+                                            "name": "7598b692-8cc0-48e9-aef9-c96250f257bb",
+                                            "extension": "jpg",
+                                            "mime": "image/jpeg",
+                                            "size": 1531,
+                                            "path": "local/avatars/7598b692-8cc0-48e9-aef9-c96250f257bb.jpg",
+                                            "url": "https://larabel-boilderplate-files-dev.s3.us-east-1.amazonaws.com/local/avatars/7598b692-8cc0-48e9-aef9-c96250f257bb.jpg",
+                                            "file_type_id": 2,
+                                            "file_type": "avatar",
+                                            "created_at": "2021-09-08T12:48:18.000000Z",
+                                            "created_by": 1,
+                                            "updated_at": "2021-09-08T12:48:18.000000Z",
+                                            "updated_by": 1,
+                                            "deleted_at": null,
+                                            "deleted_by": null
+                                        },
+                                        "relationships": {},
+                                        "includes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "banner",
+                                "id": "2",
+                                "attributes": {
+                                    "id": 2,
+                                    "display_state": "normal",
+                                    "banner_type": "user_profile",
+                                    "banner_type_id": 1
+                                },
+                                "relationships": {
+                                    "file": {
+                                        "data": {
+                                            "type": "file",
+                                            "id": 4
+                                        }
+                                    }
+                                },
+                                "includes": [
+                                    {
+                                        "type": "file",
+                                        "id": "4",
+                                        "attributes": {
+                                            "id": 4,
+                                            "user_id": 1,
+                                            "space_id": null,
+                                            "name": "a8dffedf-fdff-49dc-8fde-764d7f399314",
+                                            "extension": "png",
+                                            "mime": "image/png",
+                                            "size": 3576,
+                                            "path": "local/banners/a8dffedf-fdff-49dc-8fde-764d7f399314.png",
+                                            "url": "https://larabel-boilderplate-files-dev.s3.us-east-1.amazonaws.com/local/banners/a8dffedf-fdff-49dc-8fde-764d7f399314.png",
+                                            "file_type_id": 2,
+                                            "file_type": "banner",
+                                            "created_at": "2021-09-08T12:48:19.000000Z",
+                                            "created_by": 1,
+                                            "updated_at": "2021-09-08T12:48:19.000000Z",
+                                            "updated_by": 1,
+                                            "deleted_at": null,
+                                            "deleted_by": null
+                                        },
+                                        "relationships": {},
+                                        "includes": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "links": {
+            "self": "http://localhost:8000/v1/spaces/4/channels/1/members"
+        }
+    }
+}

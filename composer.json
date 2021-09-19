@@ -1,0 +1,74 @@
+{
+    "name": "larabel-boilderplate/api",
+    "type": "api",
+    "description": "Larabel Boilderplate API",
+    "keywords": ["framework", "laravel", "larabel-boilderplate", "rest", "RestAPI"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ankurk91/laravel-eloquent-relationships": "^1.1",
+        "coderello/laravel-passport-social-grant": "^3.0",
+        "doctrine/dbal": "^3.1",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/cashier": "^12.13",
+        "laravel/framework": "^8.40",
+        "laravel/passport": "^10.1",
+        "laravel/socialite": "^5.2",
+        "laravel/tinker": "^2.5",
+        "laravel/vapor-cli": "^1.20",
+        "laravel/vapor-core": "^2.12",
+        "league/flysystem-aws-s3-v3": "~1.0",
+        "propaganistas/laravel-phone": "^4.3",
+        "sentry/sentry-laravel": "^2.7",
+        "spatie/eloquent-sortable": "^3.11",
+        "spatie/laravel-json-api-paginate": "^1.10",
+        "spatie/laravel-query-builder": "^3.4"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "knuckleswtf/scribe": "^3.8",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

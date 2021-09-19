@@ -1,0 +1,27 @@
+{
+    "data": {
+        "type": "channel",
+        "id": "1",
+        "attributes": {
+            "id": 1,
+            "owner_id": 2,
+            "space_id": 4,
+            "name": "Channel1",
+            "description": "Channel1 Description",
+            "latitude": "39.49583400",
+            "longitude": "-90.45345000",
+            "privacy": "private",
+            "created_at": "2021-09-08T16:43:01.000000Z",
+            "created_by": 2,
+            "updated_at": "2021-09-08T16:43:01.000000Z",
+            "updated_by": 2,
+            "deleted_at": null,
+            "deleted_by": null
+        },
+        "relationships": {},
+        "includes": [],
+        "links": {
+            "self": "http://localhost:8000/v1/spaces/4/channels"
+        }
+    }
+}

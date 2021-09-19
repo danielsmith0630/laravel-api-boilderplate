@@ -1,0 +1,78 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+/**
+ * @group {{ model }} Management
+ * 
+ * APIs for managing {{ modelVariable }}s
+ */
+class {{ class }} extends Controller
+{
+    /**
+     * Get {{ model }}s
+     * 
+     * Get a listing of the {{ modelVariable }}s.
+     *
+     * @responseFile responses/{{ model }}/{{ modelVariable }}s.json
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Create {{ model }}
+     * 
+     * Create a {{ modelVariable }}.
+     *
+     * @responseFile responses/{{ model }}/{{ modelVariable }}.json
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Get {{ model }}
+     * 
+     * Get a {{ modelVariable }} with the specified id.
+     *
+     * @urlParam id int required The ID of the {{ modelVariable }}. Example: 1
+     * @responseFile responses/{{ model }}/{{ modelVariable }}.json
+     */
+    public function show({{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Update {{ model }}
+     * 
+     * Update the specified {{ modelVariable }} in storage.
+     *
+     * @urlParam id int required The ID of the {{ modelVariable }}. Example: 1
+     * @responseFile responses/{{ model }}/{{ modelVariable }}.json
+     */
+    public function update(Request $request, {{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Delete {{ model }}
+     * 
+     * Delete the specified {{ modelVariable }} from storage (mark as deleted).
+     *
+     * @urlParam id int required The ID of the {{ modelVariable }}. Example: 1
+     * @response 204
+     */
+    public function destroy({{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+}

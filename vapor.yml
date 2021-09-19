@@ -1,0 +1,48 @@
+id: 21192
+name: larabel-boilderplateapi
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        warm: 1
+        runtime: php-8.0:al2
+        domain: api.larabel-boilderplate.app
+        database: larabel-boilderplate-production
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'php artisan route:cache'
+            - 'php artisan config:cache'
+            - 'php artisan view:cache'
+        deploy:
+            - 'php artisan migrate --force'
+    staging:
+        memory: 1024
+        cli-memory: 512
+        warm: 1
+        runtime: php-8.0:al2
+        domain: api-staging.larabel-boilderplate.app
+        database: larabel-boilderplate-staging
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'php artisan route:cache'
+            - 'php artisan config:cache'
+            - 'php artisan view:cache'
+        deploy:
+            - 'php artisan migrate --force'
+    development:
+        memory: 1024
+        cli-memory: 512
+        warm: 1
+        runtime: php-8.0:al2
+        domain: api-dev.larabel-boilderplate.app
+        database: larabel-boilderplate-dev
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'php artisan route:cache'
+            - 'php artisan config:cache'
+            - 'php artisan view:cache'
+        deploy:
+            - 'php artisan migrate --force'

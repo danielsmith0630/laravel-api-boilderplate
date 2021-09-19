@@ -1,0 +1,205 @@
+{
+    "data": [
+        {
+            "type": "space",
+            "id": "4",
+            "attributes": {
+                "id": 4,
+                "owner_id": 2,
+                "name": "Space 1",
+                "bio": "Space 1 bio",
+                "website": "https://space1.com",
+                "phone_number": "2242690545",
+                "latitude": "39.49583400",
+                "longitude": "-90.45345000",
+                "address": "Patterson Township, IL",
+                "privacy": "private",
+                "created_at": "2021-09-08T16:13:01.000000Z",
+                "created_by": 2,
+                "updated_at": "2021-09-08T16:13:01.000000Z",
+                "updated_by": 2,
+                "deleted_at": null,
+                "deleted_by": null
+            },
+            "relationships": {
+                "avatars": {
+                    "data": [
+                        {
+                            "type": "avatar",
+                            "id": 4
+                        }
+                    ]
+                },
+                "banners": {
+                    "data": [
+                        {
+                            "type": "banner",
+                            "id": 4
+                        }
+                    ]
+                }
+            },
+            "includes": [
+                {
+                    "type": "avatar",
+                    "id": "4",
+                    "attributes": {
+                        "id": 4,
+                        "display_state": "normal",
+                        "avatar_type": "space",
+                        "avatar_type_id": 4
+                    },
+                    "relationships": {
+                        "file": {
+                            "data": {
+                                "type": "file",
+                                "id": 7
+                            }
+                        }
+                    },
+                    "includes": [
+                        {
+                            "type": "file",
+                            "id": "7",
+                            "attributes": {
+                                "id": 7,
+                                "user_id": 2,
+                                "space_id": 4,
+                                "name": "a9ac3da9-e4f0-404a-b346-329a1a056d12",
+                                "extension": "jpg",
+                                "mime": "image/jpeg",
+                                "size": 1531,
+                                "path": "local/avatars/a9ac3da9-e4f0-404a-b346-329a1a056d12.jpg",
+                                "url": "https://larabel-boilderplate-files-dev.s3.us-east-1.amazonaws.com/local/avatars/a9ac3da9-e4f0-404a-b346-329a1a056d12.jpg",
+                                "file_type_id": 4,
+                                "file_type": "avatar",
+                                "created_at": "2021-09-08T16:14:26.000000Z",
+                                "created_by": 2,
+                                "updated_at": "2021-09-08T16:14:26.000000Z",
+                                "updated_by": 2,
+                                "deleted_at": null,
+                                "deleted_by": null
+                            },
+                            "relationships": {},
+                            "includes": []
+                        }
+                    ]
+                },
+                {
+                    "type": "banner",
+                    "id": "4",
+                    "attributes": {
+                        "id": 4,
+                        "display_state": "normal",
+                        "banner_type": "space",
+                        "banner_type_id": 4
+                    },
+                    "relationships": {
+                        "file": {
+                            "data": {
+                                "type": "file",
+                                "id": 8
+                            }
+                        }
+                    },
+                    "includes": [
+                        {
+                            "type": "file",
+                            "id": "8",
+                            "attributes": {
+                                "id": 8,
+                                "user_id": 2,
+                                "space_id": 4,
+                                "name": "4aadfb54-3103-49dc-9d19-bff9b9bd69cd",
+                                "extension": "png",
+                                "mime": "image/png",
+                                "size": 3576,
+                                "path": "local/banners/4aadfb54-3103-49dc-9d19-bff9b9bd69cd.png",
+                                "url": "https://larabel-boilderplate-files-dev.s3.us-east-1.amazonaws.com/local/banners/4aadfb54-3103-49dc-9d19-bff9b9bd69cd.png",
+                                "file_type_id": 4,
+                                "file_type": "banner",
+                                "created_at": "2021-09-08T16:14:26.000000Z",
+                                "created_by": 2,
+                                "updated_at": "2021-09-08T16:14:26.000000Z",
+                                "updated_by": 2,
+                                "deleted_at": null,
+                                "deleted_by": null
+                            },
+                            "relationships": {},
+                            "includes": []
+                        }
+                    ]
+                }
+            ],
+            "links": {
+                "self": "http://localhost:8000/v1/spaces"
+            }
+        },
+        {
+            "type": "space",
+            "id": "5",
+            "attributes": {
+                "id": 5,
+                "owner_id": 2,
+                "name": "Space 2",
+                "bio": "Space 2 bio",
+                "website": "https://space2.com",
+                "phone_number": "2242690549",
+                "latitude": "39.49583400",
+                "longitude": "-90.45345000",
+                "address": "Patterson Township, IL",
+                "privacy": "private",
+                "created_at": "2021-09-08T16:15:15.000000Z",
+                "created_by": 2,
+                "updated_at": "2021-09-08T16:15:15.000000Z",
+                "updated_by": 2,
+                "deleted_at": null,
+                "deleted_by": null
+            },
+            "relationships": {
+                "avatars": {
+                    "data": []
+                },
+                "banners": {
+                    "data": []
+                }
+            },
+            "includes": [],
+            "links": {
+                "self": "http://localhost:8000/v1/spaces"
+            }
+        }
+    ],
+    "links": {
+        "first": "http://localhost:8000/v1/spaces?page%5Bnumber%5D=1",
+        "last": "http://localhost:8000/v1/spaces?page%5Bnumber%5D=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://localhost:8000/v1/spaces?page%5Bnumber%5D=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "http://localhost:8000/v1/spaces",
+        "per_page": 100,
+        "to": 2,
+        "total": 2
+    }
+}
